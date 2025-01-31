@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35707.178 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dject", "Dject.csproj", "{7D615820-4502-43BD-A4B1-8C509F749367}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "..\Example\Example.csproj", "{3F95BEB8-F745-4D79-8359-DDF41BBA2A0B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dject", "Dject\Dject.csproj", "{7D615820-4502-43BD-A4B1-8C509F749367}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
