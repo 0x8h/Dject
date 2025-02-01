@@ -11,10 +11,16 @@
 using Dject;
 
 namespace example {
+  
   public class main {
+
     static void Main(string[] args) {
-      DJect.DllInject("Process name here(e.g:Minecraft.Windows)", "Path here(e.g:C:\Internal client.dll)")
+
+      lib.DllInject("Process name here(e.g:Minecraft.Windows)", "Path here(e.g:C:\Internal client.dll)", (messageshow boolean true=show injected message false=hide injected message)));
+
     }
+
   }
+  
 }
 ```

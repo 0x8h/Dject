@@ -10,9 +10,9 @@ using System.Text;
 
 namespace Dject
 {
-    public class DJect
+    public class lib
     {
-        public static bool Dllinject(string process, string path)
+        public static bool Dllinject(string process, string path, bool successmessage)
         {
             if (!File.Exists(path))
             {
@@ -35,6 +35,8 @@ namespace Dject
                 WriteProcessMemory(hproc, vAlloc, Encoding.Default.GetBytes(path), (uint)((path.Length + 1) * Marshal.SizeOf(typeof(char))), out uintp);
                 CreateRemoteThread(hproc, IntPtr.Zero, 0u, Address, vAlloc, 0u, IntPtr.Zero); ;
             }
+            if (successmessage)
+                MessageBox.Show($"Injected! \nDllpath:{path} \nTarget process:{process}", "Dject", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             return true;
         }
         private static void GetAccess(string path)
