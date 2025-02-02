@@ -4,14 +4,15 @@ using System.Windows.Forms;
 using System.Security.AccessControl;
 using System.Security.Principal;
 using System;
-using static Dject.api;
 using System.Runtime.InteropServices;
 using System.Text;
+using static Dject.api;
 
 namespace Dject
 {
     public class lib
     {
+        [DllExport]
         public static bool Dllinject(string process, string path, bool successmessage)
         {
             if (!File.Exists(path))
