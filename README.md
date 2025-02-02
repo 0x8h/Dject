@@ -1,8 +1,8 @@
 <h1 align="center">Dject</h1>
-<h4 align="center">The dll injection library for uwp apps (for Dotnet)</h3>
+<h4 align="center">The dll injection library for uwp apps (for Dotnet & C++)</h3>
 
 # Usage
-1.Download dll from releases(Default dotnet version is 4.0).
+1.Download dll from releases(Default dotnet version is 4.8).
 <br>
 2.Add Dject dll to your project
 # Example code
